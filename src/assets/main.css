@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Brand Color */
+  :root {
+    --brand-blue: #0079ff;
+  }
+
+  /* Light Mode Colors */
+  :root {
+    --slate-blue: #697c9a;
+    --ocean-blue: #4b6a9b;
+    --midnight-blue: #2b3442;
+    --soft-blue: #f6f8ff;
+    --off-white: #fefefe;
+    --navy-black: #23272f;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --slate-blue: #ffffff;
+      --ocean-blue: #ffffff;
+      --midnight-blue: #ffffff;
+      --soft-blue: #141d2f;
+      --off-white: #1e2a47;
+      --navy-black: #ffffff;
+    }
+  }
+
+  .light {
+    --slate-blue: #697c9a;
+    --ocean-blue: #4b6a9b;
+    --midnight-blue: #2b3442;
+    --soft-blue: #f6f8ff;
+    --off-white: #fefefe;
+    --navy-black: #23272f;
+  }
+
+  .dark {
+    --slate-blue: #ffffff;
+    --ocean-blue: #ffffff;
+    --midnight-blue: #ffffff;
+    --soft-blue: #141d2f;
+    --off-white: #1e2a47;
+    --navy-black: #ffffff;
+  }
+
+  body {
+    min-height: 100vh;
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+  }
+  h2 {
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 33px;
+  }
+  h3 {
+    font-family: 'Space Mono', monospace;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h4 {
+    font-family: 'Space Mono', monospace;
+    font-weight: normal; /* Regular weight */
+    font-size: 13px;
+    line-height: 20px;
+  }
+}
