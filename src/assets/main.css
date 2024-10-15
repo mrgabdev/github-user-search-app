@@ -16,6 +16,7 @@
     --soft-blue: #f6f8ff;
     --off-white: #fefefe;
     --navy-black: #23272f;
+    --dark-slate-blue: #222731;
   }
 
   @media (prefers-color-scheme: dark) {
@@ -26,6 +27,7 @@
       --soft-blue: #141d2f;
       --off-white: #1e2a47;
       --navy-black: #ffffff;
+      --dark-slate-blue: #90a4d4;
     }
   }
 
@@ -36,6 +38,7 @@
     --soft-blue: #f6f8ff;
     --off-white: #fefefe;
     --navy-black: #23272f;
+    --dark-slate-blue: #222731;
   }
 
   .dark {
@@ -45,6 +48,7 @@
     --soft-blue: #141d2f;
     --off-white: #1e2a47;
     --navy-black: #ffffff;
+    --dark-slate-blue: #90a4d4;
   }
 
   body {

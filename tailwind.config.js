@@ -12,6 +12,7 @@ export default {
         softBlue: 'var(--soft-blue)',
         offWhite: 'var(--off-white)',
         navyBlack: 'var(--navy-black)',
+        darkSlateBlue: 'var(--dark-slate-blue)',
       },
       fontWeight: {
         bold: '700',
