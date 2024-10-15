@@ -84,7 +84,7 @@ export default {
 
 <template>
   <div
-    class="h-screen bg-softBlue px-6 py-8 flex md:items-center justify-center"
+    class="min-h-screen bg-softBlue px-6 py-8 flex md:items-center justify-center"
   >
     <main class="max-w-[730px] w-full">
       <header class="flex justify-between items-center">
@@ -155,7 +155,9 @@ export default {
             </section>
 
             <section class="mt-5">
-              <p v-if="user.bio">{{ user.bio }}</p>
+              <p v-if="user.bio" class="text-sm md:text-base">
+                {{ user.bio }}
+              </p>
               <p v-else>This profile has no bio</p>
             </section>
 
@@ -193,24 +195,32 @@ export default {
             <section class="flex flex-wrap justify-between gap-5">
               <div class="flex gap-5 items-center md:order-1">
                 <PinIcon :class="`${!user.location && 'fill-gray-400'}`" />
-                <p v-if="user.location">{{ user.location }}</p>
+                <p v-if="user.location" class="text-sm md:text-base">
+                  {{ user.location }}
+                </p>
                 <NotAviable v-else />
               </div>
               <div class="flex gap-5 items-center md:order-3">
                 <UrlIcon :class="`${!user.blog && 'fill-gray-400'}`" />
-                <p v-if="user.blog">{{ user.blog }}</p>
+                <p v-if="user.blog" class="text-sm md:text-base">
+                  {{ user.blog }}
+                </p>
                 <NotAviable v-else />
               </div>
               <div class="flex gap-5 items-center md:order-2">
                 <TwitterIcon
                   :class="`${!user.twitterUsername && 'fill-gray-500'}`"
                 />
-                <p v-if="user.twitterUsername">{{ user.twitterUsername }}</p>
+                <p v-if="user.twitterUsername" class="text-sm md:text-base">
+                  {{ user.twitterUsername }}
+                </p>
                 <NotAviable v-else />
               </div>
               <div class="flex gap-5 items-center md:order-4">
                 <OfficeIcon :class="`${!user.company && 'fill-gray-400'}`" />
-                <p v-if="user.company">{{ user.company }}</p>
+                <p v-if="user.company" class="text-sm md:text-base">
+                  {{ user.company }}
+                </p>
                 <NotAviable v-else />
               </div>
             </section>
