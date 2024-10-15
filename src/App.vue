@@ -125,13 +125,13 @@ export default {
         <ButtonSearch />
       </form>
       <div
-        class="bg-offWhite md:h-[444px] w-full mt-6 rounded-2xl text-oceanBlue p-9 md:px-14 md:py-10 shadow-lg"
+        class="bg-offWhite md:h-[444px] w-full mt-6 rounded-2xl text-oceanBlue p-8 md:px-14 md:py-10 shadow-lg"
       >
         <section v-if="user" class="block md:flex md:items-start md:gap-8">
           <img
             :src="user.avatarUrl"
             alt="User Avatar"
-            class="w-full max-w-[117px] rounded-full hidden md:block"
+            class="w-full max-w-[117px] max-h-[117px] rounded-full hidden md:block"
           />
           <div class="w-full">
             <!-- User Profile -->
@@ -139,7 +139,7 @@ export default {
               <img
                 :src="user.avatarUrl"
                 alt="User Avatar"
-                class="max-w-[70px] w-full rounded-full block md:hidden"
+                class="max-w-[70px] max-h-[70px] w-full rounded-full block md:hidden"
               />
               <div class="flex flex-wrap justify-between w-full">
                 <div>
