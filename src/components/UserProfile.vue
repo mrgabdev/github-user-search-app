@@ -87,14 +87,14 @@ export default {
           class="flex flex-col md:flex-row flex-wrap justify-between gap-5"
         >
           <div class="flex flex-col justify-between gap-5">
-            <div class="flex gap-5 items-center md:order-1">
+            <div class="flex gap-5 items-center">
               <PinIcon :class="`${!user.location && 'fill-gray-400'}`" />
               <p v-if="user.location" class="text-sm md:text-base">
                 {{ user.location }}
               </p>
               <NotAviable v-else />
             </div>
-            <div class="flex gap-5 items-center md:order-3">
+            <div class="flex gap-5 items-center">
               <UrlIcon :class="`${!user.blog && 'fill-gray-400'}`" />
               <p v-if="user.blog" class="text-sm md:text-base">
                 {{ user.blog }}
@@ -103,7 +103,7 @@ export default {
             </div>
           </div>
           <div class="flex flex-col justify-between gap-5">
-            <div class="flex gap-5 items-center md:order-2">
+            <div class="flex gap-5 items-center">
               <TwitterIcon
                 :class="`${!user.twitterUsername && 'fill-gray-500'}`"
               />
@@ -112,7 +112,7 @@ export default {
               </p>
               <NotAviable v-else />
             </div>
-            <div class="flex gap-5 items-center md:order-4">
+            <div class="flex gap-5 items-center">
               <OfficeIcon :class="`${!user.company && 'fill-gray-400'}`" />
               <p v-if="user.company" class="text-sm md:text-base">
                 {{ user.company }}
