@@ -6,6 +6,9 @@ export default [
   {
     name: 'app/files-to-lint',
     files: ['**/*.{js,mjs,jsx,vue}'],
+    env: {
+      jest: true,
+    },
   },
 
   {
